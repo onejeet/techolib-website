@@ -1,0 +1,133 @@
+/* root element for tabs  */
+.tabs { 
+	list-style:none; 
+	margin:0 !important;
+	padding: 0px;	
+	height: 32px;
+	background: url(../img/tabs-divider.png) no-repeat bottom center;
+}
+
+body.home .tabs { 
+	padding: 0px 30px;
+
+}
+
+/* single tab */
+ul.tabs li { 
+	display: block;
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin: 0px 5px 0px 0px !important;
+	list-style-image: none !important; 
+	
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	display:block;
+	font-size:18px;
+	height: 30px;  
+	line-height:30px;
+	text-align:center;	
+	text-decoration:none;
+	padding: 0px 0px 0px 10px;	
+	position:relative;
+	top:0px;
+	background:  url(../img/tabs.png) no-repeat;
+}
+
+ul.tabs a span{ 
+	display:block;
+	height: 100%;
+	padding-right: 10px;
+	background:  url(../img/tabs.png) no-repeat right -40px;
+}
+
+#content ul.tabs a{
+	color: #000;
+}
+
+ul.tabs a:active {
+	outline:none;
+}
+
+/* when mouse enters the tab move the background image */
+#content ul.tabs a:hover { 
+	background-position: 0px -80px;
+}
+
+#content ul.tabs a:hover span,
+#content ul.tabs a.current span{ 
+	background-position: right -120px;
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current,
+#content ul.tabs a.current:hover,
+ul.tabs li.current a {	
+	cursor:default !important; 
+	color:#000 !important;
+	display: block;
+	border-bottom: 3px solid #394296;
+	background-position: 0px -80px;
+}
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;	
+}
+
+.panes>div {
+    display: none;
+    min-height: 200px;
+    width: 80%;
+	float: left;
+	text-align: left;
+   
+}
+
+
+/* HOME TABS GALLERY ---------------------------------------------------------*/
+
+.panes{
+	margin-top: 20px;
+}
+
+body.home .panes{
+	margin-top: 0px;
+}
+
+.panes div p{
+	padding: 0px 0px;
+	line-height: 1.5em;
+}
+.panes .course-list li{
+	line-height: 1.5em;
+	text-indent: 20px;
+}
+.panes  i.fa{ margin-right: 10px; color: green;}
+.panes h5 i.fa{ margin-right: 10px; color: #394296;}
+.panes li.session {
+	font-weight: bolder;
+	margin:3px; 
+	margin-left: 0px;
+	color:  #394296;
+	text-indent: 38px;
+	text-decoration: underline;
+}
+
+.panes  h1{
+	margin-bottom: 10px; color: #394296; text-align: left;
+}
+.panes  h2,
+.panes  h3,
+.panes  h4,
+.panes  h5,
+.panes  h6 {
+	margin: 2px; color: #394296; text-align: left;
+
+.panes  a{
+	text-decoration: none;
+}

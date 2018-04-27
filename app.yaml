@@ -1,0 +1,75 @@
+application: techolib-web
+version: 1
+runtime: php
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /(.*\.(gif|GIF|png|PNG|jpg|JPG|ico|ICO|js|JS|css|CSS|eot|woff|svg))
+  static_files: \1
+  upload: (.*\.(gif|GIF|png|PNG|jpg|JPG|ico|ICO|js|JS|css|CSS|eot|woff|svg))
+
+
+- url: /
+  script: index.php
+
+- url: /contact\.php
+  script: contact.php
+
+- url: /index\.php
+  script: index.php
+
+- url: /services\.php
+  script: services.php
+
+- url: /workshops\.php
+  script: workshops.php
+
+- url: /inquiry\.php
+  script: inquiry.php
+
+- url: /sitemap\.php
+  script: sitemap.php
+
+- url: /accelerometer-controlled-robotics\.php
+  script: accelerometer-controlled-robotics.php
+
+- url: /bluetooth-controlled-robotics\.php
+  script: bluetooth-controlled-robotics.php
+
+- url: /basic-embedded\.php
+  script: basic-embedded.php
+
+- url: /computer-controlled-robotics\.php
+  script: computer-controlled-robotics.php
+
+- url: /dtmf-controlled-robotics\.php
+  script: dtmf-controlled-robotics.php
+
+- url: /gps\.php
+  script: gps.php
+
+- url: /gsm\.php
+  script: gsm.php
+
+- url: /matlab-ai\.php
+  script: matlab-ai.php
+
+- url: /matlab-ip\.php
+  script: matlab-ip.php
+
+- url: /matlab-gesture\.php
+  script: matlab-gesture.php
+
+- url: /policy\.php
+  script: policy.php
+
+- url: /robotic-arm\.php
+  script: robotic-arm.php
+
+- url: /gps\.php
+  script: gps.php
+
+- url: /send-mail\.php
+  script: send-mail.php
+
